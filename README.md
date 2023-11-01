@@ -1,4 +1,4 @@
-# TDD Projext
+# TDD Project
 
 <a name="readme-top"></a>
 
