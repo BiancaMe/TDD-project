@@ -22,4 +22,22 @@ describe Solver do
       @solver.factorial(4).should eql 16
     end
   end
+
+  describe 'Test for fizzbuzz method' do
+    it 'when is divisible by 3 it should return fizz' do
+      @solver.fizzbuzz(3).should eql 'fizz'
+    end
+
+    it 'When number is divisible by 5 it should return buzz' do
+      @solver.fizzbuzz(5).should eql 'buzz'
+    end
+
+    it 'When number is divisible by 3 and 5 it should return fizzbuzz' do
+      @solver.fizzbuzz(15).should eql 'fizzbuzz'
+    end
+
+    it 'When number is not divisible by 3 or 5 it should return number' do
+      @solver.fizzbuzz(7).should eql '7'
+    end
+  end
 end
