@@ -11,11 +11,11 @@ describe Solver do
     end
 
     it 'Case 2: When the argument is negative' do
-     lambda{ @solver.factorial(-9)}.should raise_exception ArgumentError
+      -> { @solver.factorial(-9) }.should raise_exception ArgumentError
     end
 
     it 'Case 3: When the argument is a string' do
-     lambda{ @solver.factorial('3')}.should raise_exception ArgumentError
+      -> { @solver.factorial('3') }.should raise_exception ArgumentError
     end
 
     it 'Case 4: When the argument is 4' do
